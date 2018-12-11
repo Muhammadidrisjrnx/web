@@ -3,29 +3,30 @@
 ?>
 <!DOCTYPE html>
 <html>
-<title>Management Question</title>
+<title>Manajemen Pertanyaan</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="kursioner.css">
 <link rel="stylesheet" href="css_table.css">
-<style>
+<!-- <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
-</style>
+</style> -->
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="index.php" class="w3-bar-item w3-button">Kursioner Spa</a>
+  <div class="w3-bar w3-white w3-padding w3-card">
+    <a href="index.php" class="w3-bar-item w3-button">Kuesioner Spa</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
+
     <div class="w3-right w3-hide-small">
       <a href="management_question.php" class="w3-bar-item w3-button">Manajemen Pertanyaan</a>
       <a href="user_answer.php" class="w3-bar-item w3-button">Jawaban Pengguna</a>
-      <a href="#contact" class="w3-bar-item w3-button">Kontak</a>
+      <a href="management_treatment.php" class="w3-bar-item w3-button">Manajemen Treatment</a>
     </div>
   </div>
 </div>
@@ -55,29 +56,29 @@ h1,h2,h3,h4,h5,h6 {
       <!-- <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     <!-- </div> -->
   <!-- </div> -->
-  
+
   <!-- <hr> -->
-  
+
   <!-- Menu Section -->
   <!-- <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Our Menu</h1><br>
       <h4>Bread Basket</h4>
       <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
+
       <h4>Honey Almond Granola with Fruits</h4>
       <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
+
       <h4>Belgian Waffle</h4>
       <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
+
       <h4>Scrambled eggs</h4>
       <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
+
       <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
     </div>
-    
+
     <div class="w3-col l6 w3-padding-large">
       <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
     </div>
@@ -98,7 +99,7 @@ h1,h2,h3,h4,h5,h6 {
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p> -->
       <p><button class="w3-button w3-light-grey w3-section" type="submit">SIMPAN PERTANYAAN</button></p>
     </form>
-    
+
   </div>
   <div class="w3-container w3-padding-64" id="contact">
     <h1>Edit atau Hapus Pertanyaan Kamu</h1><br>
@@ -137,7 +138,7 @@ h1,h2,h3,h4,h5,h6 {
       </td>
       </tr>
       ";
-    } 
+    }
     ?>
     </table>
   </div>
