@@ -114,8 +114,8 @@ h1,h2,h3,h4,h5,h6 {
         <td>".$i++."</td>
         <td>".$row['pertanyaan']."</td>
         <td>".$row['pertanyaan']."</td>
-        <td>".$row['jawaban']."</td>
-        <td>".$row['keterangan']."</td>
+        <td>".$row['pertanyaan']."</td>
+        <td>".$row['pertanyaan']."</td>
         </tr>
         ";
       }
