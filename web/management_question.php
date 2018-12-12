@@ -131,10 +131,10 @@ h1,h2,h3,h4,h5,h6 {
       <td>".$i++."</td>
       <td>".$row['pertanyaan']."</td>
       <td>
-      <a href='edit_question.php?id=".$row['id']."'>Edit</a>
+      <a href='edit_question.php?id=".$row['id_question']."'>Edit</a>
       </td>
       <td>
-      <a href='delete_question.php?id=".$row['id']."'>Hapus</a>
+      <a href='delete_question.php?id=".$row['id_question']."'>Hapus</a>
       </td>
       </tr>
       ";

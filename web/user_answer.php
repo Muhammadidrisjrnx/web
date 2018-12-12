@@ -105,21 +105,26 @@ h1,h2,h3,h4,h5,h6 {
     </tr>
     <?php
       include 'koneksi.php';
-      $sql = "SELECT * FROM table_question";
-      $i = 1;
+      $sql = "SELECT table_user.nama,table_question.pertanyaan,table_answer.jawaban,table_answer.keterangan FROM table_all
+      INNER JOIN table_user ON table_all.id_user=table_user.id_user
+      INNER JOIN table_question ON table_all.id_question=table_question.id_question
+      INNER JOIN table_answer ON table_all.id_answer=table_answer.id_answer
+      ";
+      $i =1;
       $result = mysqli_query($koneksi_db,$sql);
       while($row=mysqli_fetch_array($result)){
         echo "
         <tr>
         <td>".$i++."</td>
+        <td>".$row['nama']."</td>
         <td>".$row['pertanyaan']."</td>
-        <td>".$row['pertanyaan']."</td>
-        <td>".$row['pertanyaan']."</td>
-        <td>".$row['pertanyaan']."</td>
-        </tr>
+        <td>".$row['jawaban']."</td>
+        <td>".$row['keterangan']."</td>
         ";
       }
+
     ?>
+
     </table>
   </div>
 
